@@ -1,0 +1,36 @@
+<div class="container-fluid">
+<h1>
+ User Registeration
+</h1>
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+  <div class="form-group">
+  <label for="">Name</label>
+  <input required #nameRef type="text" class="form-control" name="name" ngModel>  
+   
+   {{nameRef.className}}
+</div> 
+  <div class="form-group">
+    <label for="">Email</label>
+    <input type="text" class="form-control" name="email" ngModel>  
+  </div>
+
+  <div class="form-group">
+    <label for="">Phone</label>
+    <input type="text" class="form-control" name="phoneno" ngModel>  
+  </div>
+  <div class="form-group">
+    <label for="">Street</label>
+    <input type="text" class="form-control" name="street" ngModel>  
+  </div>
+  <div class="form-group">
+    <label for="">City</label>
+    <input type="text" class="form-control" name="city" ngModel>  
+  </div>
+  <div class="form-group">
+    <label for="">Postel Code</label>
+    <input type="text" class="form-control" name="postelcode" ngModel>  
+  </div>
+  <button type="submit" class="btn btn-primary">submit</button>
+</form>
+
+</div>
